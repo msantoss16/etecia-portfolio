@@ -1,4 +1,121 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://cdnjs.cloudfare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css');
+*{
+    margin: 0;
+    padding: 0;
+}
 
+a{
+    text-decoration:none;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(97deg, #0a192f, #2b3543, #0f765d);
+    background-size: 600% 600%;
+    -webkit-animation: bgAnimation 35s ease infinite;
+    -moz-animation: bgAnimation 35s ease infinite;
+    animation: bgAnimation 35s ease infinite;
+}
+
+@-webkit-keyframes bgAnimation {
+    0%{background-position:0% 49%}
+    50%{background-position:100% 52%}
+    100%{background-position:0% 49%}
+}
+@-moz-keyframes bgAnimation {
+    0%{background-position:0% 49%}
+    50%{background-position:100% 52%}
+    100%{background-position:0% 49%}
+}
+@keyframes bgAnimation {
+    0%{background-position:0% 49%}
+    50%{background-position:100% 52%}
+    100%{background-position:0% 49%}
+}
+
+.banner{
+    position: absolute;
+    top: 30%;
+    left: 7%
+}
+
+@keyframes  movBanner{
+    0%{
+        opacity: 0%;
+        transform: translateY(10rem);
+    }
+    70%{
+        transform: translateY(-.2rem);
+    }
+    100%{
+        opacity: 100%;
+        transform: translateY(0);
+    }
+}
+
+.banner h1{
+    color: rgb(100, 255, 218);
+    margin: 0rem 0rem 2rem .3rem;
+    font-family: "Roboto Mono", serif;
+    font-weight: 400;
+    text-shadow: .3rem .2rem 2px rgba(0, 0, 0, 4);
+    line-height: 1rem;
+    margin-bottom: 3rem;
+    animation: movBanner 1.6s;
+}
+
+.banner h2{
+    color: rgb(204, 214, 246);
+    font-size: 3.0rem;
+    font-family: "Roboto Slab", serif;
+    font-weight: 600;
+    text-shadow: .2rem .2rem 2px rgba(0, 0, 0, 4);
+    margin-bottom: 1rem;
+    animation: movBanner 1.8s 50ms;
+}
+
+.banner h3{
+    color: rgb(136, 146, 176);
+    font-size: 2.5rem;
+    font-family: "Roboto Slab", serif;
+    font-weight: 500;
+    text-shadow: .2rem .2rem 2px rgba(0, 0, 0, 6);
+    opacity: .9;
+    margin-bottom: 1rem;
+    animation: movBanner 2s 100ms;
+}
+
+.banner p{
+    color: rgb(136, 146, 176);
+    font-size: 1.5rem;
+    font-family: "Roboto Mono", serif;
+    font-weight: 300;
+    text-shadow: .2rem .2rem 2px rgba(0, 0, 0, 6);
+    opacity: .9;
+    margin-bottom: 2rem;
+    animation: movBanner 2s 100ms;
+}
+
+.banner button{
+    font-family: "Roboto Slab", serif;
+    color: rgb(100, 255, 218);
+    background-color: transparent;
+    border: 1px solid rgb(100, 255, 218);
+    border-radius: .3rem;
+    padding: 1.25rem 1.75rem;
+    font-family: "Roboto Mono", Serif;
+    cursor: pointer;
+    line-height: 1;
+    font-size: 1.2rem;
+    animation: movBanner 2s 150ms;
+
+}
+
+.banner button:hover{
+    background-color: rgba(100, 255, 218, 0.07);
+}
