@@ -404,6 +404,7 @@ header{
     font-family: var(--font-secundary);
     font-size: .8rem;
     box-shadow: 0 .1rem .8rem rgba(0, 0, 0, 4);
+    transition: all .4s;
 }
 
 .card:hover .card-info{
