@@ -9,11 +9,4 @@ changed = (event) => {
     event.target.classList.toggle("notblank");
   }
 }
-/* 
-var field = document.querySelector(".field");
 
-field.addEventListener('change', function () {
-  if (field.value !== "" && !field.classList.contains("notblank")) {
-    field.classList.toggle("notblank");
-  }
-}); */
