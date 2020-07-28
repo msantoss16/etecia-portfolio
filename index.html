@@ -47,7 +47,6 @@
                     <li class="menu-item"><a href="#" class="menu-link">Conhecimento</a></li>
                     <li class="menu-item"><a href="#" class="menu-link">Projetos</a></li>
                     <li class="menu-item"><a href="#" class="menu-link">Contato</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Orçamento</a></li>
                 </ul>
             </nav>
             <div class="social-media">
@@ -181,39 +180,13 @@
                             <textarea class="field" id="mensagem" onchange="changed(event)"></textarea>
                             <label for="mensagem" class="field-label">Mensagem</label>
                         </div>
+                        <button class="btn btn-submit" onclick="fOrcamento()">Orçamento</button>
                         <button type="submit" class="btn btn-submit">Enviar</button>
                     </form>
                 </div>
             </div>
         </section>
 
-
-        <section class="sessao-orcamento" id="orcamento">
-            <div class="orcamento-wrapper">
-                <h1>Faça um orçamento</h1>
-                <form>
-                    <label for="qtde">Qtde de Páginas</label>
-                    <input type="number" min="1" name="qtde" id="qtde">
-                    <label for="js">Preciso de um script JS</label>
-                    <input type="checkbox" name="js" id="js">
-                    <label>Layout</label>
-                    <div class="group-layout">
-                        <div>
-                            <input type="radio" name="layout" id="layout-sim">
-                            <label for="layout-sim">Preciso de um layout</label>
-                        </div>
-                        <div>
-                            <input type="radio" name="layout" id="layout-nao">
-                            <label for="layout-nao">Já tenho um layout</label>
-                        </div>
-                    </div>
-                    <label for="prazo">Prazo</label>
-                    <input type="range" name="prazo" id="prazo" min="1" max="10">
-                    <label id="preco">R$ 0,00</label>
-                    <button class="btn btn-orcamento" type="submit">Enviar</button>
-                </form>
-            </div>
-        </section>
 
     </div>
 </body>

@@ -613,3 +613,8 @@ header{
     cursor: pointer;
     grid-column: 2;
   } 
+
+  .orcamento-on{
+    visibility: visible;
+    height: 100vh;
+  }
