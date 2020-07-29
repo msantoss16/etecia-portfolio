@@ -328,6 +328,7 @@ header{
 
 .conhecimento-text{
     margin-top: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .conhecimentos-img-wrapper{
@@ -573,6 +574,10 @@ header{
     opacity: 1;
   }
   
+  #qtde{
+    background-color: #4b4545;
+  }
+
   .sessao-orcamento h1{
     position: absolute;
     top: -2.5rem;
@@ -619,10 +624,7 @@ header{
     grid-column: 2;
   } 
 
-  .orcamento-on{
-    visibility: visible;
-    height: 100vh;
-  }
+
   footer{
     width: 100%;
     height: 7rem;

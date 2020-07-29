@@ -24,7 +24,7 @@ fOrcamento = (event) => {
 
 document.querySelector("#prazo").addEventListener("change", function () {
     const prazo = document.querySelector("#prazo").value;
-    document.querySelector("label[for=prazo]").innerHTML = `Prazo: ${prazo} semanas`;
+    document.querySelector("label[for=prazo]").innerHTML = `Deadline: ${prazo} weeks`;
     atualizarPreco();
 })
 
