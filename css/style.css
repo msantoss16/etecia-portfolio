@@ -13,6 +13,10 @@
     --font-secundary: "Roboto Mono", serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 #hamburguer {
     width: 1.5em;
     height: 1.5em;
@@ -197,6 +201,7 @@ header{
     top: 0;
     right: -20rem;
     transition: all 1s;
+    z-index: 150;
 }
 
 .show-menu  .sidebar{
