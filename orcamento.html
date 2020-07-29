@@ -48,18 +48,18 @@
             <div class="orcamento-wrapper">
                 <h1>Faça um orçamento</h1>
                 <form>
-                    <label for="qtde">Qtde de Páginas:</label>
-                    <input type="number" min="1" name="qtde" id="qtde">
+                    <label for="qtde"">Qtde de Páginas:</label>
+                    <input type="number" min="1" name="qtde" id="qtde" onchange="atualizarPreco()">
                     <label for="js">Preciso de um script JS?</label>
-                    <input type="checkbox" name="js" id="js">
+                    <input type="checkbox" name="js" id="js" onchange="atualizarPreco()">
                     <label>Layout: </label>
                     <div class="group-layout">
                         <div>
-                            <input type="radio" name="layout" id="layout-sim">
+                            <input type="radio" name="layout" id="layout-sim" onchange="atualizarPreco()">
                             <label for="layout-sim">Preciso de um layout</label>
                         </div>
                         <div>
-                            <input type="radio" name="layout" id="layout-nao">
+                            <input type="radio" name="layout" id="layout-nao" onchange="atualizarPreco()">
                             <label for="layout-nao">Já tenho um layout</label>
                         </div>
                     </div>
